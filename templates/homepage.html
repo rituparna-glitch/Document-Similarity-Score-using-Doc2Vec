@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title></title>
+ <link rel="stylesheet" type= "text/css" href= "{{ url_for('static',filename='style.css') }}">
+</head>
+<body>
+
+<section>
+ <h1>Calculate Similarity Score between two documents</h1>
+ <!-- Main Input For Receiving Query to our ML -->
+ <form action="{{ url_for('score')}}"method="post">
+    <input type="text" name="document 1" placeholder="Enter your text 1 here" required="required" />
+    <input type="text" name="document 2" placeholder="Enter your text 2 here" required="required" />
+
+    <button type="submit" class="btn btn-primary btn-block btn-large">Similarity Score</button>
+</form>
+  
+ </div>
+<br>
+ <h3>{{calculated_score}}</h3> 
+</section>
+
+</body>
+</html>
+

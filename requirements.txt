@@ -1,0 +1,9 @@
+Flask==2.1.2
+nltk==3.6.7
+regex==2022.4.24
+numpy>=1.21.6
+scipy>=1.8.0
+pandas>=1.4.2
+gensim==4.2.0
+Jinja2==3.1.2
+gunicorn==20.1.0
