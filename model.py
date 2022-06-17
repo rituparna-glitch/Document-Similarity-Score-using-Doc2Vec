@@ -25,9 +25,9 @@ def cleaned_doc(text):
     #remove words that are not alphabetic
     alpha_words = [word for word in word_tokens if word.isalpha()]
     #remove stopwords
-    cleaned_words = [word for word in alpha_words if not word in stopwords.words('english')]
-    return cleaned_words
-    #return alpha_words
+    #cleaned_words = [word for word in alpha_words if not word in stopwords.words('english')]
+    #return cleaned_words
+    return alpha_words
 
 #clean the paragraphs
 text_docs = []
